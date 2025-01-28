@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #d0b8ac;
+}
+
+.maindiv {
+  width: 60%;
+  height: 250px;
+  margin: 0 auto;
+  background-color: #efe5dc;
+  border-bottom-right-radius: 60px;
+  border-bottom-left-radius: 60px;
+}
+div {
+  margin: 2%;
+}
+
+.textknap {
+  display: flex;
+  place-content: center center;
+}
+
+button {
+  border: #34261f solid 0;
+  border-radius: 10px;
+  width: 200px;
+  height: 80px;
+  background-color: #594336;
+  color: #fbfefb;
+  font-family: "Inter", sans-serif;
+  font-size: 3rem;
+  font-weight: 500;
+}
+input {
+  border: 3px solid #594336;
+  background-color: #fbfefb;
+  color: #34261f;
+  font-family: "Inter", sans-serif;
+  font-size: calc(0.6rem + 0.4vw);
+  font-weight: 500;
+}
+
+#hinttext {
+  font-family: "Inter", sans-serif;
+  color: #594336;
+  font-size: 4rem;
+  text-align: center;
+}
+
+img {
+  margin-left: 25%;
+  width: 50%;
+}
+
+.god-forsvind {
+  animation-name: forsvind_god;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+}
+
+@keyframes forsvind_god {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(40%) scale(1.5);
+  }
+
+  100% {
+    transform: translateY(0) scale(1);
+  }
+}
+
+.hide {
+  display: none;
+}
