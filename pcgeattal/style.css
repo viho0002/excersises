@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(201, 201, 201);
+}
+
+p {
+  font-size: 2rem;
+  font-family: monospace;
+  margin-bottom: 5%;
+  color: #5b5b5b;
+}
+
+button {
+  font-size: 2rem;
+  font-family: monospace;
+  border: 2px rgb(154, 154, 154) solid;
+  padding: 1%;
+  color: #5b5b5b;
+  width: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+button:hover {
+  color: white;
+  border-color: white;
+  background-color: #5b5b5b;
+}
+
+.cooldiv {
+  background-color: rgb(255, 255, 255);
+  width: 50%;
+  height: 180px;
+  margin: 0 auto;
+  padding: 1% 2%;
+  border: 2px rgb(154, 154, 154) solid;
+  box-shadow: 5px 8px rgba(0, 0, 0, 0.345);
+}
+
+.smoldiv {
+  display: flex;
+  gap: 5%;
+}
+
+.reed1 {
+  color: #574b4b;
+}
+.reed2 {
+  color: #4f3636;
+}
+.reed3 {
+  color: #814c4c;
+}
+.reed4 {
+  color: #783333;
+}
+.reed5 {
+  color: #ad1e1e;
+}
+.reed6 {
+  color: rgb(217, 19, 19);
+}
+
+.red1 {
+  background-color: rgb(194, 174, 174);
+}
+.red2 {
+  background-color: rgb(183, 149, 149);
+}
+.red3 {
+  background-color: rgb(159, 109, 109);
+}
+.red4 {
+  background-color: rgb(146, 75, 75);
+}
+.red5 {
+  background-color: rgb(147, 47, 47);
+}
+.red6 {
+  background-color: rgb(143, 22, 22);
+}
+
+.shake1 {
+  animation-name: shake;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+.shake2 {
+  animation-name: shake;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+.shake3 {
+  animation-name: shake;
+  animation-duration: 0.8s;
+  animation-iteration-count: infinite;
+}
+.shake4 {
+  animation-name: shake;
+  animation-duration: 0.6s;
+  animation-iteration-count: infinite;
+}
+.shake5 {
+  animation-name: shake;
+  animation-duration: 0.4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
