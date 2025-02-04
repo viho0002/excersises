@@ -1,0 +1,10 @@
+ul {
+  display: flex;
+  list-style: none;
+  font-family: fantasy;
+  font-weight: bold;
+  gap: 5px;
+}
+a {
+  text-decoration: none;
+}

@@ -4,6 +4,7 @@ let min = 0;
 let max = 100;
 let wow = 0;
 let get = 0;
+let timer = 1.4;
 
 function sidenVises() {
   console.log("sidenVises");
@@ -12,6 +13,8 @@ function sidenVises() {
   max = 100;
   wow = 0;
   get = 0;
+  timer = 1.4;
+  console.log;
 
   document.querySelector("#buttonG").classList.remove("hidden");
   document.querySelector("#buttonW").classList.add("hidden");
@@ -26,18 +29,19 @@ function sidenVises() {
 function numLow() {
   min = wow;
   wow = Math.ceil((max - min) / 2 + min);
-  get += 1;
+  get++;
   updateScore();
 }
 
 function numHigh() {
   max = wow;
   wow = Math.ceil((max - min) / 2 + min);
-  get += 1;
+  get++;
   updateScore();
 }
 
 function win() {
+  document.querySelector("div").classList.remove("shake");
   document.querySelector("body").classList.remove("red1", "red2", "red3", "red4", "red5", "red6");
   document.querySelector("div").classList.remove("shake1", "shake2", "shake3", "shake4", "shake5", "shake6");
   document.querySelector("p").classList.remove("shake1", "shake2", "shake3", "shake4", "shake5", "shake6", "reed1", "reed2", "reed3", "reed4", "reed5", "reed6");
@@ -47,9 +51,9 @@ function win() {
 
 function geat() {
   wow = (max - min) / 2 + min;
-  get += 1;
+  get++;
   updateScore();
-  document.querySelector("div").classList.add("shake" + get);
+  document.querySelector("div").classList.add("shake");
   document.querySelector("#buttonW").classList.remove("hidden");
   document.querySelector("#buttonL").classList.remove("hidden");
   document.querySelector("#buttonH").classList.remove("hidden");
@@ -57,7 +61,11 @@ function geat() {
 }
 
 function updateScore() {
-  document.querySelector("#gaet").classList.add("reed" + get, "shake" + get);
+  console.log("timeren er = ", timer);
+  if (timer - 0.2 > 0.2) {
+    document.documentElement.style.setProperty("--shake", (timer -= 0.2) + "s");
+  }
+
   document.querySelector("body").classList.add("red" + get);
   document.querySelector("#min").textContent = min;
   document.querySelector("#max").textContent = max;
