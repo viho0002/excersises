@@ -20,7 +20,7 @@ const sb = document.querySelector("#valg");
 changeLang(locale);
 
 console.log(sb[1]);
-document.querySelector("button").addEventListener("click", () => {
+document.querySelector("select").addEventListener("change", () => {
   let localChange;
   if (sb.value === "danish") {
     localChange = "da";
