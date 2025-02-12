@@ -28,14 +28,15 @@ function tingest() {
   curseWords.forEach((elm) => {
     //tager og kigger texten igennem ffor hvert bad ord og skifter det ud med det gode ord.
     //når den går igennem en gang gemmer den resultated med theText = theText.replaceAll(elm.bad, elm.good);
-    theText = theText.replaceAll(elm.bad, elm.good);
+    theText = theText.replaceAll(elm.bad, `<span>${elm.good}</span>`);
+    // console.log("good", elm.good);
+    // document.querySelector("");
     //smid texten ud der hvor den skal være
-    document.querySelector("p").textContent = theText;
+    document.querySelector("p").innerHTML = theText;
   });
+
   console.log(theText);
 }
-
-spl;
 
 //ternary operator
 // condition ? exprTrue : exprFalse

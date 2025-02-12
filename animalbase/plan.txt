@@ -1,0 +1,26 @@
+Stars
+ - rememberModel, View, Controller!
+ - 1.Model
+ - - add star to animal
+ - 2.View
+ - - add visible (fixed) star to each animal in the list
+ - - get the star status from the model, and display that in the list
+ - 3. Controller
+ - - add user interactivivty to turn stars on af off.
+
+
+Winners
+ - 1.Model
+ - - add winner status to animal
+ - 2.View
+ - - add visible winners (fixed values) to each animal in the list
+ - - get the star winner from the model, and display that in the list
+ - 3. Controller
+ - - (fake winners): add a toggle button to make each animal a winner or not
+ - - design logic for rules .-.-.
+ - - implement the logic with lots of basic funtions
+ - - add user interface to logic:
+ - 4. View: (hardcoded dialog boxes)
+    - ask the user if want to remove A or B - or ignore
+    - afk the user if want to remove other - or ignore
+ - -            dynamic dialog boxes

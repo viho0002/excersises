@@ -1,0 +1,19 @@
+
+Filtering
+- try to hard code filter - only cats
+- try another filter - only dogs
+- add user interactivity
+- ad the all filter
+- add some cleanup
+
+Sorting 
+- try to hard code sorting by name
+- try to hard code sorting by type
+- add user interactivity
+- add more generic sort functions
+- change sort directions!!
+- add some cleanup
+
+Combining Filtering and Sorting !
+
+- other fixes
